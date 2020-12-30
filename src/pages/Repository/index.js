@@ -46,7 +46,7 @@ class Repository extends Component {
     const { repository, issues, loading } = this.state;
 
     if (loading) {
-      return <Loading></Loading>;
+      return <Loading />;
     }
 
     return <h1>Repository</h1>;
