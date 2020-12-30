@@ -37,13 +37,13 @@ class Repository extends Component {
 
     this.setState({
       repository: repository.data,
-      // issues: issues.data,
+      issues: issues.data,
       loading: false,
     });
   }
 
   render() {
-    const { repository, loading } = this.state;
+    const { repository, issues, loading } = this.state;
 
     if (loading) {
       return <Loading />;
